@@ -8,8 +8,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  width: min(90%, 1200px);
-  margin: auto;
   background: #0f172a;
   color: #e2e8f0;
 }
@@ -17,6 +15,13 @@ body {
 /*ROOT CONTAINER IN INDEX.HTML*/
 #root {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  width: min(90%, 1200px);
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 2rem;
